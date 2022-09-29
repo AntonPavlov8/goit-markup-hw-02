@@ -6,6 +6,7 @@
 
 body {
     width:auto;
+    max-width: 2000px;
     margin: auto;
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -41,12 +42,14 @@ body {
 #header-contacts {
     color: var(--primary-text-color);
 }
+#header-contacts:hover {
+    color: var(--accent-color);
+}
 .header a {
     text-decoration: none;
     color: #000000;
 }
 .header a:hover {
-    cursor: default;
     color: var(--accent-color);
 }
 #header-active-link {
@@ -72,7 +75,7 @@ body {
     background-color: var(--accent-color);
     border: 0;
     border-radius: 4px;
-    width: 200px;
+    padding: 0px 24px 0px 24px;
     height: 50px;
     font-size: 16px;
     color: #FFFFFF;
@@ -86,8 +89,9 @@ body {
 }
 
 .features {
-    padding-top: 94px;
+    margin-top: 94px;
     line-height: 24px;
+    font-size: 14px;
 }
 .features ul {
     padding: 0px;
@@ -105,7 +109,7 @@ body {
 
 
 .whatWeDo {
-    padding: 100px 0px 94px 0px;
+    margin: 100px 0px 94px 0px;
     text-align: center;
 }
 .whatWeDo h2 {
@@ -164,7 +168,6 @@ footer {
     list-style: none;
 }
 .footer-content a {
-    cursor: default;
     font-style: normal;
     text-decoration: none;
     color: var(--primary-text-color);
@@ -176,7 +179,7 @@ footer {
 .filter-buttons {
     margin: auto;
     width: 611px;
-    padding-top: 94px;
+    margin-top: 94px;
     display: flex;
     justify-content: center;
     gap: 8px;
